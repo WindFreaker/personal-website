@@ -1,0 +1,49 @@
+.link-brand-icon {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.link-brand-icon:hover,
+.link-brand-icon:active {
+    color: var(--brand-color);
+}
+
+.link-brand-icon::before {
+    content: " ";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: text-top;
+    margin-right: 0.2em;
+    mask-image: var(--brand-svg);
+    -webkit-mask-image: var(--brand-svg);
+    background-color: currentColor;
+}
+
+/* special CSS for each brand link */
+/* all brand icon SVGs come from https://simpleicons.org/ */
+
+#link-github {
+    --brand-color: #181717;
+    --brand-svg: url(https://simpleicons.org/icons/github.svg);
+}
+
+#link-mastodon {
+    --brand-color: #6364FF;
+    --brand-svg: url(https://simpleicons.org/icons/mastodon.svg);
+}
+
+#link-twitter {
+    --brand-color: #1D9BF0;
+    --brand-svg: url(https://simpleicons.org/icons/twitter.svg);
+}
+
+#link-discord {
+    --brand-color: #5865F2;
+    --brand-svg: url(https://simpleicons.org/icons/discord.svg);
+}
+
+#link-email {
+    --brand-color: #EA4335;
+    --brand-svg: url(https://simpleicons.org/icons/gmail.svg);
+}

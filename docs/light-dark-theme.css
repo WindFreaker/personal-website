@@ -1,0 +1,30 @@
+/* this file contains all the CSS needed to properly theme the website for both light and dark mode */
+/* step 1: define variables based on prefered color scheme */
+/* step 2: implement those variables instead of hardcoded colors */
+/* it really is this simple I don't know how so many big websites manage to mess this up */
+
+:root {
+    --background-color: #F9F9FA;
+    --text-color: #363959;
+    --field-color: #FFFFFF;
+    --outline-color: #AAAAAC;
+
+    --highlight-color-1: #25CBF9;
+    --highlight-color-2: #FC6E22;
+    --highlight-color-3: #28CF75;
+    --highlight-color-4: #9D71FF;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #0A0A0A;
+        --text-color: #FFFFFF;
+        --field-color: #161618;
+        --outline-color: #2A2A2E;
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}

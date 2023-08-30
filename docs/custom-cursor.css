@@ -1,0 +1,13 @@
+* {
+    cursor: none;
+}
+
+#customCursorCanvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
